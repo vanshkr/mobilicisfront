@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const backendApi = createApi({
   reducerPath: "backendApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: `http://localhost:5000/`,
+    baseUrl: `https://sampleserver-ce15.onrender.com/`,
   }),
   endpoints: (builder) => ({
     getBMWOrMercedesOwnersWithLowIncome: builder.query({
